@@ -1,0 +1,129 @@
+.vista-test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin: 20px 0 70px 0;
+}
+
+.vista-test .preguntas {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    list-style: none;
+    padding: 50px 100px;
+}
+
+.vista-test .preguntas .pregunta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(110, 110, 110, 0.703);
+    opacity: 0.5;
+    transition: all .350s ease-in-out;
+}
+
+.vista-test .preguntas .pregunta:hover {
+    opacity: 1;
+}
+
+.vista-test .preguntas .pregunta .tituloPregunta {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #576071;
+    margin-bottom: 20px;
+}
+
+.vista-test .preguntas .pregunta .opciones {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    padding: 10px 10px 10px 50px;
+    gap: 10px;
+}
+
+.vista-test .preguntas .pregunta .opciones .opcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vista-test .preguntas .pregunta .opciones .opcion label {
+    font-size: 1.2em;
+    color: #3D3B40;
+    cursor: pointer;
+}
+
+.vista-test .preguntas .pregunta .opciones .opcion input {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.vista-test .preguntas .pregunta .opciones .opcion .forma1 {
+    width: 50px;
+    height: 5px;
+    margin-left: 20px;
+    background-color: #576071;
+    opacity: 0;
+    transition: all .350s ease-in-out;
+}
+
+.vista-test .preguntas .pregunta .opciones .opcion:hover .forma1 {
+    opacity: 1;
+}
+
+.vista-test .btnResultado {
+    background-color: #88619a;
+    padding: 25px 56px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    transition: all .200s ease-in;
+    cursor: pointer;
+}
+
+.vista-test .btnResultado:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+
+    .vista-test .preguntas {
+        padding: 20px 10px;
+    }
+
+    .vista-test .preguntas .pregunta .tituloPregunta {
+        font-size: 1.5em;
+    }
+
+    .vista-test .preguntas .pregunta .opciones {
+        gap: 20px;
+    }
+
+    .vista-test .preguntas .pregunta .opciones .opcion label {
+        font-size: 1em;
+    }
+
+    .vista-test .preguntas .pregunta .opciones .opcion .forma1 {
+        display: none;
+    }
+
+    .vista-test .btnResultado {
+        padding: 15px 36px;
+        border-radius: 50px;
+        font-size: 18px;
+    }
+}

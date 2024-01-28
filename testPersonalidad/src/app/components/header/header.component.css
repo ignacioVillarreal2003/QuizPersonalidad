@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.header .marca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .marca  h1 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.header .marca  img {
+    width: 70px;
+    height: 70px;
+}
+
+.header a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all .25s ease-in;
+}
+
+.header a:hover {
+    background-color: #88619a;
+    color: white;
+}

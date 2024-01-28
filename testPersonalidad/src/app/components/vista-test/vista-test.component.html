@@ -1,0 +1,25 @@
+<div class="vista-test">
+    <ul class="preguntas" *ngIf="preguntas">
+        <li class="pregunta" *ngFor="let pregunta of preguntas">
+            <h2 class="tituloPregunta">{{ pregunta.pregunta }}</h2>
+            <ul class="opciones">
+                <li class="opcion">
+                    <label><input type="radio" name="opcion{{ pregunta.numero }}" value="1" [(ngModel)]="pregunta.nota">{{ pregunta.opciones[2] }}</label>
+                    <div class="forma1"></div>
+                </li>
+                <li class="opcion">
+                    <label><input type="radio" name="opcion{{ pregunta.numero }}" value="2" [(ngModel)]="pregunta.nota">{{ pregunta.opciones[1] }}</label>
+                    <div class="forma1"></div>
+                </li>
+                <li class="opcion">
+                    <label><input type="radio" name="opcion{{ pregunta.numero }}" value="3" [(ngModel)]="pregunta.nota">{{ pregunta.opciones[0] }}</label>
+                    <div class="forma1"></div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <button class="btnResultado" (click)="obtenerResultado()">Obtener resultados</button>
+    <div class="progress-bar">
+
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="resultado-test" *ngIf="resultados">
+    <h1>Resultados</h1>
+    <ul class="listaResultados">
+        <li class="resultado r{{i}}" *ngFor="let resultado of resultados; let i = index">
+            <div class="titulo">
+                <h2>{{ resultado.tipo }}:</h2>
+                <h3>{{ resultado.titulo }}</h3>
+            </div>
+            <p>{{ resultado.descripcion }}</p>
+        </li>
+    </ul>
+</div>
