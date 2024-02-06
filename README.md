@@ -10,7 +10,7 @@ Esta es una pequeña aplicación que te permite realizar un test de personalidad
 
 2. Navega al directorio del proyecto:
     ```
-    cd tu-proyecto
+    cd JSTestPersonalidad
     ```
 
 3. Instala las dependencias:
