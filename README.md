@@ -1,4 +1,4 @@
-# JSTestPersonalidad
+# QuizPersonalidad
 
 Esta es una pequeña aplicación que te permite realizar un test de personalidad. Es una herramienta sencilla diseñada para experimentar con tu nueva marca personal.
 
@@ -10,7 +10,7 @@ Esta es una pequeña aplicación que te permite realizar un test de personalidad
 
 2. Navega al directorio del proyecto:
     ```
-    cd JSTestPersonalidad
+    cd QuizPersonalidad
     ```
 
 3. Instala las dependencias:
